@@ -1,0 +1,9 @@
+.home img {
+  width: 50px;
+}
+
+ul li {
+  width: 600px;
+  /* display: flex;
+  align-content: center; */
+}
