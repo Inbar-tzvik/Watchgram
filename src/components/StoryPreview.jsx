@@ -9,20 +9,22 @@ export function StoryPreview({ story, submitComment }) {
     <div className="story-list flex justify-center story-card">
       <div className="user-name">
         <p>{story.by.fullname}</p>
-        <svg
-          aria-label="More options"
-          class="_ab6-"
-          color="#262626"
-          fill="#262626"
-          height="24"
-          role="img"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <circle cx="12" cy="12" r="1.5"></circle>
-          <circle cx="6" cy="12" r="1.5"></circle>
-          <circle cx="18" cy="12" r="1.5"></circle>
-        </svg>
+        <button>
+          <svg
+            aria-label="More options"
+            class="_ab6-"
+            color="#262626"
+            fill="#262626"
+            height="24"
+            role="img"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <circle cx="12" cy="12" r="1.5"></circle>
+            <circle cx="6" cy="12" r="1.5"></circle>
+            <circle cx="18" cy="12" r="1.5"></circle>
+          </svg>
+        </button>
       </div>
       <img src={story.imgUrl} alt="" className="story__img" />
       <div className="action-buttons">
@@ -122,7 +124,9 @@ export function StoryPreview({ story, submitComment }) {
       <div className="story-likes">
         <p> {calculate(story.likedBy.length)}</p>
       </div>
-      comments :<h3> {story.txt}</h3>
+      <p>
+        {story.by.fullname} :<span> {story.txt}</span>
+      </p>
       {story.comments.map((comment) => (
         <div key={comment.by._id + comment.txt}>
           <p>

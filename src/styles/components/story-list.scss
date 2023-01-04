@@ -3,4 +3,9 @@
   align-items: center;
   align-content: flex-start;
   margin-top: calc($base_unit * 4);
+  p {
+    width: 100%;
+    padding: 8px 4px 0px 20px;
+    font-weight: 600;
+  }
 }

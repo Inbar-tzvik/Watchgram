@@ -24,6 +24,8 @@
 
     p {
       margin: 8px 4px 8px 12px;
+      width: 100%;
+      font-weight: 600;
     }
     flex: 0 0 auto;
   }
@@ -47,4 +49,6 @@
 
 .story-likes {
   width: 100%;
+  // padding-left: 8px;
+  margin-bottom: 8px;
 }

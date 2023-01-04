@@ -4,10 +4,12 @@ $clr2: #000;
 $clr3: rgb(255, 255, 255);
 $clr4: darken($clr3, 40%);
 $clr5: #2d2d2d;
+$clr6: rgb(38, 38, 38);
 
 // LAYOUT
 $layoutPadding: 20px;
 $base_unit: 4px;
+$fon-size: 14px;
 // LAYOUT BREAKPOINTS
 $break-narrow: 1200px;
 $break-normal: 1360px;
