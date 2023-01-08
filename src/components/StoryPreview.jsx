@@ -1,4 +1,6 @@
 import { useRef } from 'react'
+import Avatar from 'react-avatar'
+
 export function StoryPreview({ story, submitComment }) {
   const textInput = useRef()
 
@@ -8,6 +10,8 @@ export function StoryPreview({ story, submitComment }) {
   return (
     <div className="story-list flex justify-center story-card">
       <div className="user-name">
+        <Avatar className="avatar" name="Foo Bar" round={true} size={32} />
+
         <p>{story.by.fullname}</p>
         <button>
           <svg
